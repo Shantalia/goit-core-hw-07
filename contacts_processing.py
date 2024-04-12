@@ -9,11 +9,9 @@ def input_error(func):
         except ValueError:
             return "Give me name and phone please."
         except KeyError:   
-            return "Give me correct name and phone please."  
+            return "Give me correct name/phone/birthday please."  
         except IndexError:
             return "There is no result. Give me name and phone please."
-        except FileNotFoundError:
-            return "No such file or it damaged"
     return inner
 
 book = AddressBook()

@@ -11,7 +11,7 @@ def input_error(func):
         except KeyError:   
             return "Give me correct name/phone/birthday please."  
         except IndexError:
-            return "There is no result. Give me name and phone please."
+            return "There is no result. Give me name/phone/birthday please."
     return inner
 
 book = AddressBook()

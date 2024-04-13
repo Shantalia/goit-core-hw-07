@@ -41,10 +41,10 @@ class Record:
         self.phone.value = new_phone
             
     def add_birthday(self, birthday):
-        self.birthday = Birthday(birthday)
+            self.birthday = Birthday(birthday)
 
     def __str__(self):
-        return f"------------\nContact name: {self.name.value}\nPhone: {self.phone.value}\nBirthday: {self.birthday.value}"
+        return f"------------\nContact name: {self.name.value}\nPhone: {self.phone.value}\nBirthday: {self.birthday}"
 
 class AddressBook(UserDict):
     def add_record(self, obj_rec): 

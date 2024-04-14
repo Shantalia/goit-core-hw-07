@@ -80,9 +80,9 @@ def congrats():
 def show_birthday(args):
     name = args[0]
     for nm in book.data:
-        if nm == name:
+        if (nm == name) and (book.data[name].birthday):
             return book.data[name].birthday.value
         elif nm != name:
             continue
         else:
-            return "No contact with this name!"
+            return "No contact with this name or no added birthday!"
